@@ -32,7 +32,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Console_Games - backup" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -80,6 +80,8 @@
       <workItem from="1571568339461" duration="10661000" />
       <workItem from="1571600341356" duration="1793000" />
       <workItem from="1571602756792" duration="1067000" />
+      <workItem from="1571650784746" duration="3880000" />
+      <workItem from="1571681076370" duration="3770000" />
     </task>
     <servers />
   </component>

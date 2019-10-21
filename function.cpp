@@ -46,13 +46,14 @@ void inputChecker ()
 
 void rockPaperScissor ()
 {
-    bool win{false};
-    bool is_running{false};
+    bool is_running{true};
 
     char computer_value = 0;
+    char play_again ;
 
     int player_input = 0;
     int comp_num = 0;
+    int comp_win_tally = 0, player_win_tally = 0;
 
     std::ifstream File;
     File.open("RPS.txt");
@@ -60,7 +61,7 @@ void rockPaperScissor ()
                  "                  Welcome to Rock, Paper, Scissor\n"
                  "                       Here are your choices\n";
 
-    while(!is_running)
+    while(is_running)
     {
         std::cout << "_______________________________________________________________________\n"
                      "1: Rock\n"
@@ -87,48 +88,97 @@ void rockPaperScissor ()
         std::cin >> player_input;
         inputChecker();
 
-        while(!win || !is_running)
+        for (int wins = 0; wins <=5 ; ++wins)
         {
-            if(player_input == comp_num)
+            while(wins >=5 || !is_running)
             {
-                std::cout << "draw\n";
-                break;
-            }
-            if(player_input == 1 && comp_num == 2)
-            {
-                std::cout <<"paper covers rock, computer wins\n";
-                break;
-            }
-            if(player_input == 1 && comp_num == 3)
-            {
-                std::cout << "rock breaks scissors, you win\n";
-                break;
-            }
+                if(player_input == comp_num)
+                {
+                    std::cout << "draw\n";
+                    std::cout << "player wins" << player_win_tally << "/5\n";
+                    std::cout << "computer wins" << comp_win_tally << "/5\n";
+                    break;
+                }
+                if(player_input == 1 && comp_num == 2)
+                {
+                    std::cout <<"paper covers rock, computer wins\n";
+                    std::cout << "player wins" << player_win_tally << "/5\n";
+                    std::cout << "computer wins" << wins++ + comp_win_tally  << "/5\n";
+                    break;
+                }
+                if(player_input == 1 && comp_num == 3)
+                {
+                    std::cout << "rock breaks scissors, you win\n";
+                    std::cout << "player wins" << wins++ + player_win_tally << "/5\n";
+                    std::cout << "computer wins" << comp_win_tally << "/5\n";
+                    break;
+                }
 
-            if(player_input == 2 && comp_num == 1)
-            {
-                std::cout <<"paper covers rock, you wins\n";
-                break;
-            }
-            if(player_input == 2 && comp_num == 3)
-            {
-                std::cout <<"scissors cut paper, computer wins\n";
-                break;
-            }
+                if(player_input == 2 && comp_num == 1)
+                {
+                    std::cout <<"paper covers rock, you wins\n";
+                    std::cout << "player wins" << wins++ + player_win_tally<< "/5\n";
+                    std::cout << "computer wins" << comp_win_tally << "/5\n";
+                    break;
+                }
+                if(player_input == 2 && comp_num == 3)
+                {
+                    std::cout <<"scissors cut paper, computer wins\n";
+                    std::cout << "player wins" << player_win_tally << "/5\n";
+                    std::cout << "computer wins" << wins++ + comp_win_tally<< "/5\n";
+                    break;
+                }
 
-            if(player_input == 3 && comp_num == 2)
-            {
-                std::cout <<"scissors cut paper, you wins\n";
-                break;
-            }
-            if(player_input == 3 && comp_num == 1)
-            {
-                std::cout << "rock breaks scissors, computer win\n";
-                break;
+                if(player_input == 3 && comp_num == 2)
+                {
+                    std::cout <<"scissors cut paper, you wins\n";
+                    std::cout << "player wins" << wins++ + player_win_tally<< "/5\n";
+                    std::cout << "computer wins" << comp_win_tally << "/5\n";
+                    break;
+                }
+                if(player_input == 3 && comp_num == 1)
+                {
+                    std::cout << "rock breaks scissors, computer win\n";
+                    std::cout << "player wins" << player_win_tally << "/5\n";
+                    std::cout << "computer wins" << wins++ + comp_win_tally<< "/5\n";
+                    break;
+                }
+                if(player_win_tally >= 5)
+                {
+                    std::cout <<"player wins";
+                    std::cout << "You would like to play again";
+                    is_running = false;
+
+                    if(play_again =='y')
+                    {
+                        is_running = true;
+                        guessTheNumber();
+                    }
+                    if(play_again =='n')
+                    {
+                        is_running = false;
+                        menu();
+                    }
+                }
+                else if (comp_win_tally >=5)
+                {
+                    std::cout << "computer wins";
+                    is_running = false;
+
+                    if(play_again =='y')
+                    {
+                        is_running = true;
+                        guessTheNumber();
+                    }
+                    if(play_again =='n')
+                    {
+                        is_running = false;
+                        menu();
+                    }
+                }
             }
         }
     }
-
 }
 
 void guessTheNumber ()
@@ -154,28 +204,28 @@ void guessTheNumber ()
         std::cin >> guess; //user inputs a value
         inputChecker();
 
-        while(!win || tries == 5)
+        for (tries = 0; tries <= 5; ++tries)
         {
-            for (tries = 0; tries <= 5; ++tries)
+            while(!win)
             {
                 if(guess < target_number)
                 {
                     std::cout << "too low, try again\n";
-                    std::cout << tries << "/5 tries used\n";
+                    std::cout << tries++ << "/5 tries used\n";
                     std::cin >> guess;
                     inputChecker();
                 }
                 if(guess > target_number)
                 {
                     std::cout << "too high, try again\n";
-                    std::cout << tries << "/5 tries used\n";
+                    std::cout << tries++ << "/5 tries used\n";
                     std::cin >> guess;
                     inputChecker();
                 }
                 if(guess == target_number)
                 {
                     std::cout << "you win\n"
-                                 "The number I guessed was " << target_number <<
+                                 "The number I guessed was" << target_number <<
                                  "\nWould you like to play again y/n\n";
                     std::cin >> play_again;
                     win = true;
@@ -192,7 +242,7 @@ void guessTheNumber ()
                         menu();
                     }
                 }
-                if(tries >= 5)
+                if(tries == 5)
                 {
                     std::cout << "you ran out of tries.\n " <<target_number<< "was the number I was guessing\n"
                                                                                "Would you like to play again y/n\n";
@@ -212,4 +262,4 @@ void guessTheNumber ()
             }
         }
     }
-}//tries end not working fix later
+}//bug then losing game still shows too low message. No fix
