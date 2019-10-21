@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Console_Games" targetName="Console_Games" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="288bcfa3-9930-4aff-9077-5f80087028f7" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Console games" />
+  </component>
+  <component name="ProjectId" id="1S6M9jh1KBwrxSfgrEYaPmhA2zU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Console_Games - backup" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Console_Games" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Console_Games" TARGET_NAME="Console_Games" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Console_Games" RUN_TARGET_NAME="Console_Games">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="288bcfa3-9930-4aff-9077-5f80087028f7" name="Default Changelist" comment="" />
+      <created>1570879442986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570879442986</updated>
+      <workItem from="1570879445697" duration="4249000" />
+      <workItem from="1570887794889" duration="5060000" />
+      <workItem from="1570973204025" duration="5775000" />
+      <workItem from="1571135680028" duration="40000" />
+      <workItem from="1571135750930" duration="7698000" />
+      <workItem from="1571213384159" duration="6811000" />
+      <workItem from="1571227038847" duration="5485000" />
+      <workItem from="1571307372495" duration="3785000" />
+      <workItem from="1571351546724" duration="2595000" />
+      <workItem from="1571398098955" duration="5214000" />
+      <workItem from="1571421400547" duration="3983000" />
+      <workItem from="1571479866701" duration="7953000" />
+      <workItem from="1571513978889" duration="1434000" />
+      <workItem from="1571525360204" duration="564000" />
+      <workItem from="1571568339461" duration="10661000" />
+      <workItem from="1571600341356" duration="1793000" />
+      <workItem from="1571602756792" duration="1067000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

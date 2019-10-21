@@ -1,0 +1,3 @@
+C:/Users/Kiera/CLionProjects/Console_Games/cmake-build-debug/CMakeFiles/Console_Games.dir
+C:/Users/Kiera/CLionProjects/Console_Games/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Kiera/CLionProjects/Console_Games/cmake-build-debug/CMakeFiles/rebuild_cache.dir

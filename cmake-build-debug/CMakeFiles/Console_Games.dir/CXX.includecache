@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Kiera/CLionProjects/Console_Games/function.cpp
+iostream
+-
+fstream
+-
+ctime
+-
+cstdlib
+-
+function.h
+C:/Users/Kiera/CLionProjects/Console_Games/function.h
+
+C:/Users/Kiera/CLionProjects/Console_Games/function.h
+
